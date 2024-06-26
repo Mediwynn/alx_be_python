@@ -9,10 +9,10 @@ match priority:
         print( "Reminder: ", task, "is a high priority task", end= " ")
 
     case 'medium':
-        print( "Memo: ", task, "is a medium priority task", end= " ")
+        print( "Reminder: ", task, "is a medium priority task", end= " ")
 
     case 'low':
-        print( "Note: ", task, "is a low priority task", end= " ")
+        print( "Reminder: ", task, "is a low priority task", end= " ")
 
     case _:
         print("Invalid priority level")
