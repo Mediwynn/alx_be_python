@@ -1,5 +1,5 @@
 potential_condition = ["sunny" , "rainy" , "cold"]
-current_condition = str(input("What’s the weather like today? (sunny/rainy/cold): "))
+current_condition = (input("What’s the weather like today? (sunny/rainy/cold): "))
 
 
 if current_condition == potential_condition[0]:
