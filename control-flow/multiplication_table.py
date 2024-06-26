@@ -4,6 +4,6 @@ i = 1
 for i in range(1, 11):
     result = userin * i
     
-    print( userin, "*", i, "=", result )
+    print(f"{userin} * {i} = {userin * i}")
     
     i = i + 1
