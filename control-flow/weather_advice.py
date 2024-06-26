@@ -1,14 +1,14 @@
 potential_condition = ["sunny" , "rainy" , "cold"]
-current_condition = (input("What's the weather like today? (sunny/rainy/cold): "))
+weather = (input("What's the weather like today? (sunny/rainy/cold): "))
 
 
-if current_condition == "sunny":
+if weather == "sunny":
     print("Wear a t-shirt and sunglasses.")
 
-elif current_condition == "rainy":
+elif weather == "rainy":
     print("Don't forget your umbrella and a raincoat.")
 
-elif current_condition == "cold":
+elif weather == "cold":
     print("Make sure to wear a warm coat and a scarf.")
 
 else:
