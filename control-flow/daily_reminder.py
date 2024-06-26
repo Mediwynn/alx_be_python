@@ -1,4 +1,4 @@
-reminder = input("Enter your reminder: ")
+task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ")
 time_bound = input("Is it time-bound? (yes/no): ")
 
@@ -6,13 +6,13 @@ time_bound = input("Is it time-bound? (yes/no): ")
 
 match priority:
     case 'high':
-        print( "Reminder: ", reminder, "is a high priority reminder", end= " ")
+        print( "Reminder: ", task, "is a high priority task", end= " ")
 
     case 'medium':
-        print( "Memo: ", reminder, "is a medium priority reminder", end= " ")
+        print( "Memo: ", task, "is a medium priority task", end= " ")
 
     case 'low':
-        print( "Note: ", reminder, "is a low priority reminder", end= " ")
+        print( "Note: ", task, "is a low priority task", end= " ")
 
     case _:
         print("Invalid priority level")
