@@ -25,5 +25,5 @@ match operation:
             print("ERROR cannot divide by 0")
 
     case _:
-        print("Cannot divide by zero.")
+        print("Error")
         
