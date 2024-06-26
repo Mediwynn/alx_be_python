@@ -2,6 +2,7 @@ userin = int(input("Enter the size of the pattern: "))
 i = 0
 j = 0
 
+
 while i != userin:  
     if userin >= 0:
         for i in range(userin):
