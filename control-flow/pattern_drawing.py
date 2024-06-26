@@ -1,14 +1,13 @@
 userin = int(input("Enter the size of the pattern: "))
 i = 0
 j = 0
-block = "*"
 
 while i != userin:  
     if userin >= 0:
         for i in range(userin):
 
             for j in range(userin):
-                print(block, end=' ')
+                print("*", end=' ')
                 j = j + 1
             
             i = i + 1
