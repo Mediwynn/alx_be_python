@@ -17,7 +17,7 @@ match priority:
     case _:
         print("Invalid priority level")
 
-if times_bound == "yes" :
+if times_bound == 'yes':
     print("that requires immediate attention today!")
 
 else:
