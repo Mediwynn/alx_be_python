@@ -1,6 +1,6 @@
 def perform_operation(num1, num2, operation):
     result = None
-    op = ["add", "substract", "multiply","divide"]
+    op = ["add", "subtract", "multiply","divide"]
 
     if operation == op[0]:
         result = num1 + num2
