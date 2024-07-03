@@ -1,5 +1,4 @@
 import datetime
-add = None
 
 def display_current_datetime():
     current_date_time = datetime.datetime.now()
