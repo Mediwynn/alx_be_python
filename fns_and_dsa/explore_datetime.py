@@ -10,6 +10,7 @@ display_current_datetime()
 def ask():
     days_to_add = input("Enter the number of days to add to the current date: ")
     return days_to_add
+
 def integer(numbergiven):
 
     if numbergiven.isdigit():
