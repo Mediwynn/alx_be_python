@@ -1,6 +1,6 @@
 def perform_operation(num1, num2, operation):
     result = None
-    op = ['add', 'substract', 'multiply','divide']
+    op = ["add", "substract", "multiply","divide"]
 
     if operation == op[0]:
         result = num1 + num2
@@ -17,7 +17,7 @@ def perform_operation(num1, num2, operation):
     elif operation == op[3]:
         
         if num2 != 0:
-            result = num1 * num2
+            result = num1 / num2
             return result
         else:
             msg = print("INVALID SECOND NUMBER")
