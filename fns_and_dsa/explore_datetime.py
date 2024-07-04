@@ -1,7 +1,7 @@
-import datetime
+from datetime import datetime
 
 def display_current_datetime():
-    current_date_time = datetime.datetime.now()
+    current_date_time = datetime.now()
     format_date_time = current_date_time.strftime("%Y-%m-%d %H:%M:%S")
     print(f"Current date and time: {format_date_time}")
 
@@ -22,7 +22,7 @@ def integer(numbergiven):
 
 def calculate_future_date():
     
-    current_date = datetime.date.today()
+    current_date = datetime.today()
     future_date = current_date + datetime.timedelta(days = integer(ask()))
     print(f"Future date: {future_date}")
 
