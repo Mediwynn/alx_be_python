@@ -1,4 +1,5 @@
 from datetime import datetime
+from datetime import timedelta
 
 def display_current_datetime():
     current_date_time = datetime.now()
@@ -23,7 +24,7 @@ def integer(numbergiven):
 def calculate_future_date():
     
     current_date = datetime.today()
-    future_date = current_date + datetime.timedelta(days = integer(ask()))
+    future_date = current_date + timedelta(days = integer(ask()))
     result = future_date.strftime()
     print(f"Future date: {result}")
     
