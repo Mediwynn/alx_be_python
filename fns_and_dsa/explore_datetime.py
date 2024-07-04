@@ -1,5 +1,5 @@
 from datetime import datetime
-import datetime
+
 def display_current_datetime():
     current_date_time = datetime.now()
     format_date_time = current_date_time.strftime("%Y-%m-%d %H:%M:%S")
@@ -24,6 +24,7 @@ def calculate_future_date():
     
     current_date = datetime.today()
     future_date = current_date + datetime.timedelta(days = integer(ask()))
-    print(f"Future date: {future_date}")
-
+    result = future_date.strftime()
+    print(f"Future date: {result}")
+    
 calculate_future_date()
