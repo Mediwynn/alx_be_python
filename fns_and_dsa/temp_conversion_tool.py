@@ -41,5 +41,5 @@ if is_number(temperature) == True:
         print("Incorrect conversion option")
 
 else:
-    print("INVALID TEMPERATURE INPUT")
+    print("Invalid temperature. Please enter a numeric value.")
 
