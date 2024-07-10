@@ -1,5 +1,4 @@
-class BankAccount():
-
+class BankAccount:
     def __init__(self, account_balance, def_val = 0):
         self.account_balance = account_balance
         self.def_val = def_val
