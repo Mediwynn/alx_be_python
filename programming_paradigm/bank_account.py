@@ -1,4 +1,4 @@
-class BankAccount(default_value = 0):
+class BankAccount():
 
     def __init__(self, account_balance, def_val = 0):
         self.account_balance = account_balance
