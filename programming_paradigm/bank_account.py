@@ -6,6 +6,7 @@ class BankAccount:
 
     def deposit(amount):
             self.account_balance += amount
+            return amount
 
     def withdraw(amount):
         minus = float(amount)
