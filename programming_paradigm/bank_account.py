@@ -4,11 +4,11 @@ class BankAccount:
         self.def_val = def_val
         
 
-    def deposit(amount):
+    def deposit(amount) -> None:
             self.account_balance += amount
             return amount
 
-    def withdraw(amount):
+    def withdraw(amount) -> None:
         minus = float(amount)
         if minus >= self.account_balance:
             self.account_balance -= minus
