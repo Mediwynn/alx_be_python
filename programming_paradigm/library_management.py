@@ -1,21 +1,28 @@
 class Book:
-    def __init__(title, author, _is_checked_out):
-        name = title
-        writer = author
+    def __init__(self, title, author):
+        self.name = title
+        self.writer = author
 
         for title in Library._books:
             if Library._books == title:
                 _is_checked_out = False
                 break
     
-    def Library():
-        _books = []
+class Library:
+    
+    _books = []
 
-        def add_book(title, author):
-            Book.__init__(title, author, None)
+    def add_book(title, author):
+        _books.append(Book(title, author))
         
-        def check_out_book(title):
-            assf
+    def check_out_book(title):
+        assf
 
-        def return_book(title):
-            asgf
+    def return_book(title):
+        _books.append(Book(title, author))
+
+    def list_available_books():
+        for Book.self.name in Library._books:
+            def get_name():
+                return Book.self.name
+            print(f"Name: {get_name()}, Age: {person.age}")
