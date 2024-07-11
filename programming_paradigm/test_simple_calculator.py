@@ -3,34 +3,34 @@ from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calc = SimpleCalculator()
+        self.calc = self.simple_calculator()
     
     
-    def add(a, b):
-        self.assertEqual(SimpleCalculator.add(3, 5), 8)
-        self.assertEqual(SimpleCalculator.add(3, -5), -2)
-        self.assertEqual(SimpleCalculator.add(0, 0), 0)
+    def addition(a, b):
+        self.assertEqual(self.calc.add(3, 5), 8)
+        self.assertEqual(self.calc.add(3, -5), -2)
+        self.assertEqual(self.calc.add(0, 0), 0)
 
     def subtract(a, b):
-        self.assertEqual(SimpleCalculator.subtract(3, 5), -3)
-        self.assertEqual(SimpleCalculator.subtract(3, -5), 8)
-        self.assertEqual(SimpleCalculator.subtract(0, 0), 0)
+        self.assertEqual(self.calc.subtract(3, 5), -3)
+        self.assertEqual(self.calc.subtract(3, -5), 8)
+        self.assertEqual(self.calc.subtract(0, 0), 0)
 
-    def multiply(a, b):
-        self.assertEqual(SimpleCalculator.multiply(3, 5), 15)
-        self.assertEqual(SimpleCalculator.multiply(3, -5), -15)
-        self.assertEqual(SimpleCalculator.multiply(0, 0), 0)
-        self.assertEqual(SimpleCalculator.multiply(5163521, 0), 0)
-    def divide(a, b):
-        self.assertEqual(SimpleCalculator.multiply(3, 3), 1)
-        self.assertEqual(SimpleCalculator.multiply(9, 3), 3)
-        self.assertEqual(SimpleCalculator.multiply(3, -3), -1)
-        self.assertEqual(SimpleCalculator.multiply(9, -3), -3)
-        self.assertEqual(SimpleCalculator.multiply(3, -3), -1)
-        self.assertEqual(SimpleCalculator.multiply(9, -3), -3)
-        self.assertEqual(SimpleCalculator.multiply(4, 8), 0.5)
-        self.assertEqual(SimpleCalculator.multiply(0, 0), None)
-        self.assertEqual(SimpleCalculator.multiply(5163521, 0), None)
+    def multiplication(a, b):
+        self.assertEqual(self.calc.multiply(3, 5), 15)
+        self.assertEqual(self.calc.multiply(3, -5), -15)
+        self.assertEqual(self.calc.multiply(0, 0), 0)
+        self.assertEqual(self.calc.multiply(5163521, 0), 0)
+    def division(a, b):
+        self.assertEqual(self.calc.multiply(3, 3), 1)
+        self.assertEqual(self.calc.multiply(9, 3), 3)
+        self.assertEqual(self.calc.multiply(3, -3), -1)
+        self.assertEqual(self.calc.multiply(9, -3), -3)
+        self.assertEqual(self.calc.multiply(3, -3), -1)
+        self.assertEqual(self.calc.multiply(9, -3), -3)
+        self.assertEqual(self.calc.multiply(4, 8), 0.5)
+        self.assertEqual(self.calc.multiply(0, 0), None)
+        self.assertEqual(self.calc.multiply(5163521, 0), None)
 
 if __name__ == '__main__':
     unittest.main()
