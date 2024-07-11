@@ -19,4 +19,4 @@ def safe_divide(numerator, denominator):
         except ZeroDivisionError:
             print("Error: Cannot divide by zero.")
         else:
-            return result
+            return f"The result of the division is {result}"
