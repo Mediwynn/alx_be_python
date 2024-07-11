@@ -1,18 +1,22 @@
 import unittest
 from simple_calculator import SimpleCalculator
 
-class test(unittest.TestCase):
-    def test_add(a, b):
+class TestSimpleCalculator(unittest.TestCase):
+    def setUp(self):
+        self.calc = SimpleCalculator()
+    
+    
+    def add(a, b):
         self.assertEqual(SimpleCalculator.add(3, 5), 8)
         self.assertEqual(SimpleCalculator.add(3, -5), -2)
         self.assertEqual(SimpleCalculator.add(0, 0), 0)
 
-    def test_subtract(a, b):
+    def subtract(a, b):
         self.assertEqual(SimpleCalculator.subtract(3, 5), -3)
         self.assertEqual(SimpleCalculator.subtract(3, -5), 8)
         self.assertEqual(SimpleCalculator.subtract(0, 0), 0)
 
-    def test_multiply(a, b):
+    def multiply(a, b):
         self.assertEqual(SimpleCalculator.multiply(3, 5), 15)
         self.assertEqual(SimpleCalculator.multiply(3, -5), -15)
         self.assertEqual(SimpleCalculator.multiply(0, 0), 0)
