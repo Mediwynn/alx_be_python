@@ -4,7 +4,7 @@ class BankAccount:
         self.def_val = def_val
         
 
-    def deposit(amount) -> None:
+    def deposit(command, amount) -> None:
             self.account_balance += amount
             return amount
 
