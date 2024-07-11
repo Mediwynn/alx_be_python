@@ -5,7 +5,6 @@ class BankAccount:
         
 
     def deposit(amount, account) -> None:
-            self.account_balance = account
             self.account_balance += amount
             return amount
 
