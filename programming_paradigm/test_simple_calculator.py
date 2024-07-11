@@ -6,22 +6,22 @@ class TestSimpleCalculator(unittest.TestCase):
         self.calc = SimpleCalculator()
     
     
-    def addition(a, b):
+    def test_addition(self, a, b):
         self.assertEqual(self.calc.add(3, 5), 8)
         self.assertEqual(self.calc.add(3, -5), -2)
         self.assertEqual(self.calc.add(0, 0), 0)
 
-    def subtract(a, b):
+    def test_subtract(self, a, b):
         self.assertEqual(self.calc.subtract(3, 5), -3)
         self.assertEqual(self.calc.subtract(3, -5), 8)
         self.assertEqual(self.calc.subtract(0, 0), 0)
 
-    def multiplication(a, b):
+    def test_multiplication(self, a, b):
         self.assertEqual(self.calc.multiply(3, 5), 15)
         self.assertEqual(self.calc.multiply(3, -5), -15)
         self.assertEqual(self.calc.multiply(0, 0), 0)
         self.assertEqual(self.calc.multiply(5163521, 0), 0)
-    def division(a, b):
+    def test_division(self, a, b):
         self.assertEqual(self.calc.multiply(3, 3), 1)
         self.assertEqual(self.calc.multiply(9, 3), 3)
         self.assertEqual(self.calc.multiply(3, -3), -1)
