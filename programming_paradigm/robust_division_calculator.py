@@ -14,6 +14,9 @@ def safe_divide(numerator, denominator):
 
     if isnum(numerator, denominator) == True:
         try:
+            numerator = float(numerator)
+            denominator = float(denominator)
+            
             result = numerator / denominator
     
         except ZeroDivisionError:
