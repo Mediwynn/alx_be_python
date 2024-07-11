@@ -3,7 +3,7 @@ from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.calc = self.simple_calculator()
+        self.calc = SimpleCalculator()
     
     
     def addition(a, b):
