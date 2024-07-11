@@ -8,7 +8,7 @@ def safe_divide(numerator, denominator):
             num1 = float(numerator)
             num2 = float(denominator)
         except ValueError:
-            print("Invalid input")
+            print("Error: Please enter numeric values only.")
         else:
             return True
 
