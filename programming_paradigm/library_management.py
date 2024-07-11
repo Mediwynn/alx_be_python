@@ -1,7 +1,7 @@
 class Book:
     def __init__(self, title, author):
-        self.name = title
-        self.writer = author
+        self.title = title
+        self.author = author
 
         for title in Library._books:
             if Library._books == title:
