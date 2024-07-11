@@ -1,7 +1,3 @@
-result = None
-num1 = None
-num2 = None
-
 def safe_divide(numerator, denominator):
     def isnum(numerator, denominator):
         try:
