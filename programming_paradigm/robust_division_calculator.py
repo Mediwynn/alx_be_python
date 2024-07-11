@@ -17,6 +17,6 @@ def safe_divide(numerator, denominator):
             result = numerator / denominator
     
         except ZeroDivisionError:
-            print("Cannot divide by ZERO")
+            print("Cannot divide by zero.")
         else:
             return result
