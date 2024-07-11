@@ -5,14 +5,15 @@ class BankAccount:
         
 
     def deposit(self, amount) -> None:
-            self.account_balance += amount
-            return amount
+        self.account_balance += amount
+        return amount
 
     def withdraw(self, amount) -> None:
-        if amount > self.account_balance:
+        if amount < self.account_balance:
             self.account_balance -= amount
+            return amount
         else:
-           return False
+            return False
 
     def display_balance(self):
         current = float(self.account_balance)
