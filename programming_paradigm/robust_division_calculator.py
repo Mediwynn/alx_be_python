@@ -3,10 +3,10 @@ num1 = None
 num2 = None
 
 def safe_divide(numerator, denominator):
-    def isnum(up, down):
+    def isnum(numerator, denominator):
         try:
-            num1 = float(up)
-            num2 = float(down)
+            num1 = float(numerator)
+            num2 = float(denominator)
         except ValueError:
             print("Invalid input")
         else:
