@@ -31,17 +31,13 @@ class PrintBook(Book):
         return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
 
 class Library():
-    global book_list
-
     def __init__(self) -> None:
-        pass
+        self.books = []
+
 
     def add_book(self, books):
-        book_list.append(books)
+        self.books.append(books)
 
     def list_books(self):
         for self.__repr__ in book_list:
             print(self.__repr__)
-
-
-book_list = []
