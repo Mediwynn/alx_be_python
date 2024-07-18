@@ -4,7 +4,7 @@ class Book:
         self.author = author
 
     def __str__(self) -> str:
-        return f"{self.title} by {self.author}"
+        return f"Book: {self.title} by {self.author}"
     
     def __repr__(self) -> str:
         return f"Book: {self.title} by {self.author}"
@@ -14,7 +14,7 @@ class EBook(Book):
         self.file_size = file_size
     
     def __str__(self) -> str:
-        return f"{self.title} by {self.author} size: {self.file_size}KB"
+        return f"Ebook: {self.title} by {self.author} size: {self.file_size}KB"
     
     def __repr__(self) -> str:
         return f"Ebook: {self.title} by {self.author}, File Size: {self.file_size}KB"
@@ -25,7 +25,7 @@ class PrintBook(Book):
         self.page_count = page_count
 
     def __str__(self):
-        return f"{self.title} by {self.author} pages: {self.page_count}"
+        return f"PrintBook: {self.title} by {self.author} pages: {self.page_count}"
     
     def __repr__(self) -> str:
         return f"PrintBook: {self.title} by {self.author}, Page Count: {self.page_count}"
