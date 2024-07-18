@@ -14,10 +14,9 @@ class Rectangle(Shape):
     
     
     def area(self):
-        super().area()
-        area = self.length * self.width
+        Shape.area = self.length * self.width
         
-        return f"Area of rectangle: {area}"
+        return str(super().area())
 
 
 class Circle(Shape):
@@ -26,7 +25,7 @@ class Circle(Shape):
         super().__init__()
     
     def area(self):
-        super().area()
-        area = math.pi * self.radius * self.radius
+        
+        Shape.area = math.pi * self.radius * self.radius
 
-        return f"Area of circle: {area}"
+        return str(super().area())
